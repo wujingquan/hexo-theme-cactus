@@ -151,3 +151,7 @@ baidu_analytics:
 # logo and/or favicons of you website.
 gravatar:
   email: name@email.com
+
+# 百度SEO搜索引擎自动提交
+baidu_auto_sitemap:
+  enabled: true
