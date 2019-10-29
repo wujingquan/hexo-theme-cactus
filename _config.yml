@@ -156,5 +156,9 @@ gravatar:
 baidu_auto_sitemap:
   enabled: true
 
-# Author Or Site Name
+# 设置 Author Or Site Name
 title_or_author: title
+
+# 是否显示 Border Top
+border_top:
+  enabled: false
