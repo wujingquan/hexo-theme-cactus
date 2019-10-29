@@ -155,3 +155,6 @@ gravatar:
 # 百度SEO搜索引擎自动提交
 baidu_auto_sitemap:
   enabled: true
+
+# Author Or Site Name
+title_or_author: title
