@@ -166,3 +166,6 @@ border_top:
 
 about:
   enabled: false
+
+footer_right:
+  enabled: false
