@@ -1,3 +1,3 @@
 <!-- styles -->
-<%- css('lib/font-awesome/css/all.min.css') %>
-<%- css('lib/justified-gallery/css/justifiedGallery.min.css') %>
+<%- theme.cdn_font_awesome ? css(theme.cdn_font_awesome) : css('lib/font-awesome/css/all.min.css') %>
+<%- theme.cdn_justified_gallery && theme.cdn_justified_gallery.css ? css(theme.cdn_justified_gallery.css) : css('lib/justified-gallery/css/justifiedGallery.min.css') %>

@@ -36,7 +36,11 @@
         <% } %>
     <% } %>
     <!-- title -->
-    <title><%= page_title() %></title>
+    <% if (is_home()) { %>
+      <title><%= config.title %></title>
+    <% } else { %>
+      <title><%= page_title() %> - <%= config.title %></title>
+    <% } %>
     <!-- styles -->
     <%- css('css/style') %>
     <!-- persian styles -->

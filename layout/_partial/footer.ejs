@@ -3,7 +3,12 @@
     <%= __('footer.copyright') %> &copy; <%= new Date().getFullYear() %> <%= config[theme.title_or_author] %>
   </div>
 
-  <% if (theme.footer_right && theme.footer_right.enabled) { %>
+  <% if (
+    (theme.footer_right.is_home && is_home()) ||
+    (theme.footer_right.is_post && is_post()) ||
+    (theme.footer_right.is_page && is_page()) ||
+    (theme.footer_right.is_archive && is_archive())
+  ) { %>
     <div class="footer-right">
       <nav>
         <ul>

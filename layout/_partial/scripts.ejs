@@ -1,6 +1,7 @@
 <!-- jquery -->
-<%- js('lib/jquery/jquery.min') %>
-<%- js('lib/justified-gallery/js/jquery.justifiedGallery.min.js') %>
+<%- theme.cdn_jquery ? js(theme.cdn_jquery) : js('lib/jquery/jquery.min') %>
+
+<%- (theme.cdn_justified_gallery && theme.cdn_justified_gallery.js) ? js(theme.cdn_justified_gallery.js) : js('lib/justified-gallery/js/jquery.justifiedGallery.min.js') %>
 <!-- clipboard -->
 <% if (is_post()){ %>
   <%- js('lib/clipboard/clipboard.min') %>

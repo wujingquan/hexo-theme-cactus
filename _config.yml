@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/wujingquan
+projects_url: https://projects.wujingquan.com
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -16,9 +16,9 @@ direction: ltr
 nav:
   Home: /
   Contact: /contact/
-  articles: /archives/
+  Archives: /archives/
   Github: https://github.com/wujingquan
-  projects: projects_url
+  Projects: https://projects.wujingquan.com
 
 
 # Links to your social media accounts.
@@ -103,7 +103,7 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+highlight: github
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
@@ -168,4 +168,22 @@ about:
   enabled: false
 
 footer_right:
+  is_home: false
+  is_post: true
+  is_page: false
+  is_archive: false
+
+field_show:
   enabled: false
+  text_align: left
+
+share:
+  enabled: false
+
+# CDN
+cdn_jquery: https://s1.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js
+cdn_justified_gallery:
+  js: https://s0.pstatp.com/cdn/expire-1-M/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js
+  css: https://s1.pstatp.com/cdn/expire-1-M/justifiedGallery/3.7.0/css/justifiedGallery.min.css
+cdn_font_awesome: https://s3.pstatp.com/cdn/expire-1-M/font-awesome/5.2.0/css/all.min.css
+cdn_font: https://statics.wujingquan.com/fonts/meslo-LG/MesloLGM-Regular.ttf

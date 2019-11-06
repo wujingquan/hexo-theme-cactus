@@ -30,7 +30,9 @@
 <% } %>
 
 <section id="writing">
+  <% if (theme.field_show && theme.field_show.enabled) { %>
   <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
+  <% } %>
   <% if (theme.tags_overview && site.tags.length) { %>
   <span class="h2"><%= __('index.topics') %></span>
   <span class="widget tagcloud">
@@ -59,7 +61,9 @@
 
 <% if (site.data.projects) { %>
 <section id="projects">
+  <% if (theme.field_show && theme.field_show.enabled) { %>
   <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
+  <% } %>
   <ul class="project-list">
     <% for(var obj in site.data.projects){ %>
       <li class="project-item">
